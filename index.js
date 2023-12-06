@@ -14,12 +14,6 @@ const server = http.createServer((req, res) => {
         res.end();
         return;
     }
-
-    app.use(cors({
-        origin: function (origin, callback) {
-            return callback(null, origin);
-        }
-    }));
     
     let filePath = path.join(__dirname, 'public', req.url === '/' ? 'index.html' : req.url);
 
@@ -38,6 +32,16 @@ const server = http.createServer((req, res) => {
             contentType = 'application/json';
             break;
         // Add more cases for other file types if needed
+        case '.js':
+            contentType = 'text/javascript';
+            break;
+        case '.png':
+            contentType = 'image/png';
+            break;
+        case '.jpg':
+            contentType = 'image/jpg';
+            break;
+        // ... other file types
     }
 
     // Read file
