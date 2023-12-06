@@ -3,13 +3,18 @@ const path = require("path");
 const fs = require("fs");
 
 const server = http.createServer((req, res) => {
+    // Set CORS headers
+    res.setHeader('Access-Control-Allow-Origin', '*'); // Allow any origin
+    res.setHeader('Access-Control-Allow-Methods', 'OPTIONS, GET, POST, PUT, PATCH, DELETE'); // Allowed methods
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization'); // Allowed headers
 
-    const express = require('express');
-    const cors = require('cors');
-    
-    const app = express();
-    app.use(cors());
-    
+    // Handle OPTIONS method for preflight requests
+    if (req.method === 'OPTIONS') {
+        res.writeHead(204);
+        res.end();
+        return;
+    }
+
     let filePath = path.join(__dirname, 'public', req.url === '/' ? 'index.html' : req.url);
 
     // Get the extension of the file
