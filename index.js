@@ -15,6 +15,12 @@ const server = http.createServer((req, res) => {
         return;
     }
 
+    app.use(cors({
+        origin: function (origin, callback) {
+            return callback(null, origin);
+        }
+    }));
+    
     let filePath = path.join(__dirname, 'public', req.url === '/' ? 'index.html' : req.url);
 
     // Get the extension of the file
