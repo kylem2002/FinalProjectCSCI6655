@@ -1,0 +1,40 @@
+{"Environmentally Friendly Product Guide": [{
+  "productNames": "eco water bottle ",
+  "ecoRating": "9/10",
+  "cost": "$15",
+  "materials": "Recycled plastics",
+  "CreatorDetails": "Made in Sacramento, California by GreenHouse",
+  "productTypes": "Water bottle recyclables"
+},
+{
+  "productNames": "Solar Light Gardens",
+  "ecoRating": "8/10",
+  "cost": "$25",
+  "materials": "Solar panels and recycled plastics",
+  "CreatorDetails": "Made in Sacramento, California by GreenHouse",
+  "productTypes": "Lighting"
+},
+{
+  "productNames": "Eco Sponge ",
+  "ecoRating": "10/10",
+  "cost": "$10",
+  "materials": "Cotton Fibers",
+  "CreatorDetails": "Made in Jersity City, New Jersey by CleanerPlanet",
+  "productTypes": "Cleaning Supplies"
+},
+{
+  "productNames": "Reusable Grocery Bags",
+  "ecoRating": "7/10",
+  "cost": "$8",
+  "materials": "Recycled plastics",
+  "CreatorDetails": "Made in New Haven, Connecticut by Reuser",
+  "productTypes": "Grocery Bags"
+},
+{
+  "productNames": "Plastic Toothbrushes",
+  "ecoRating": "10/10",
+  "cost": "$21",
+  "materials": "Plastics and rubber",
+  "CreatorDetails": "Made in Hartford, Connecticut by SmartTeeth",
+  "productTypes": "Dental Care"
+}]}
